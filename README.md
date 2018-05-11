@@ -2,7 +2,7 @@
 sourcecode of multi-planar prostate segmentation (ISBI publication in 2018)
 
 Multi-Planar Prostate Segmentation with multi-stream CNN
-This algorithm enables the high resolution segmentation of the prostate in MRI images from orthogonal scans (transversal, sagittal and coronal). With this multi-planar approach, improvements on segmentation predictions could be achieved comparing the results of single volume (transversal) based segmentation.
+This algorithm enables the high resolution segmentation of the prostate in MRI images from orthogonal T2-weighted scans (transversal, sagittal and coronal). With this multi-planar approach, improvements on segmentation predictions could be achieved comparing the results of single volume (transversal) based segmentation.
 
 Algorithm description
 Details on the algorithm can be found in the attached paper. The inputs to the algorithm are the three orthogonal volumes, which should be registered to each other (example data is provided in the ‘data’ directory). Data used in this research was obtained from the ProstateX Challenge [1]. The outputs of the algorithm are the high resolution segmentation, its downsampled version (downsampled to transversal input space) as well as the linearly upsampled input volumes.
