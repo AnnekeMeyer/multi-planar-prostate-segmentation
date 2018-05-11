@@ -1,3 +1,4 @@
 .h5 filter=lfs diff=lfs merge=lfs -text
 weights/weights_singleStream.h5 filter=lfs diff=lfs merge=lfs -text
 weights/weights_multiStream.h5 filter=lfs diff=lfs merge=lfs -text
+*.nrrd filter=lfs diff=lfs merge=lfs -text
