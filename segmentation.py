@@ -7,6 +7,7 @@ from keras import backend as K
 import tensorflow as tf
 import numpy as np
 import SimpleITK as sitk
+os.environ["CUDA_VISIBLE_DEVICES"] = str(2)
 
 # expectations for input data structure: multi plane images must be provided (for extraction of ROI)
 # plane must be defined in img name with keywords 'tra', 'sag' or 'cor'
@@ -77,7 +78,7 @@ def segment(inputDirectory, outputDirectory, multistream = True):
     arr = sitk.GetArrayFromImage(output_predicted_original)
     arr[startROI[2]:startROI[2]+sizeROI[2], startROI[1]:startROI[1]+sizeROI[1],startROI[0]:startROI[0]+sizeROI[0]] = img_labels[0,:,:,:,0]
     output_predicted = sitk.GetImageFromArray(arr)
-	output_predicted = utils.binaryThresholdImage(output_predicted, 0.5)
+    output_predicted = utils.binaryThresholdImage(output_predicted, 0.5)
     output_predicted = utils.getLargestConnectedComponents(output_predicted)
     output_predicted.SetOrigin(img_tra_HR.GetOrigin())
     output_predicted.SetDirection(img_tra_HR.GetDirection())
