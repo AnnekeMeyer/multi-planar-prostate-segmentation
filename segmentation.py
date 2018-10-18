@@ -1,3 +1,12 @@
+# -----------------------------------------------------------------------------
+# This file is created as part of the multi-planar prostate segmentation project
+#
+#  file:           utils.py
+#  author:         Anneke Meyer, Otto-von-Guericke University Magdeburg
+#  year:           2017
+#
+# -----------------------------------------------------------------------------
+
 import UNET3D
 import preprocessing
 import utils
@@ -7,7 +16,7 @@ from keras import backend as K
 import tensorflow as tf
 import numpy as np
 import SimpleITK as sitk
-os.environ["CUDA_VISIBLE_DEVICES"] = str(2)
+#os.environ["CUDA_VISIBLE_DEVICES"] = str(2)
 
 # expectations for input data structure: multi plane images must be provided (for extraction of ROI)
 # plane must be defined in img name with keywords 'tra', 'sag' or 'cor'
