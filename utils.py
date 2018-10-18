@@ -1,11 +1,10 @@
 # -----------------------------------------------------------------------------
-## This file is created as part of the multi-planar-segmentation project submitted to ISBI
+# This file is created as part of the multi-planar prostate segmentation project
 #
-#  \file           utils.py
-#  \author         Anneke Meyer, Otto-von-Guericke University Magdeburg
-#  \year           2017
+#  file:           utils.py
+#  author:         Anneke Meyer, Otto-von-Guericke University Magdeburg
+#  year:           2017
 #
-## 
 # -----------------------------------------------------------------------------
 
 
