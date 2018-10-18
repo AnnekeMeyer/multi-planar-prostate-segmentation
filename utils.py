@@ -1,3 +1,14 @@
+# -----------------------------------------------------------------------------
+## This file is created as part of the multi-planar-segmentation project submitted to ISBI
+#
+#  \file           utils.py
+#  \author         Anneke Meyer, Otto-von-Guericke University Magdeburg
+#  \year           2017
+#
+## 
+# -----------------------------------------------------------------------------
+
+
 import os
 import numpy as np
 import math
