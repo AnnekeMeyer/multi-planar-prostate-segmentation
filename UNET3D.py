@@ -1,3 +1,12 @@
+# -----------------------------------------------------------------------------
+# This file is created as part of the multi-planar prostate segmentation project
+#
+#  file:           UNET3D.py
+#  author:         Anneke Meyer, Otto-von-Guericke University Magdeburg
+#  year:           2017
+#
+# -----------------------------------------------------------------------------
+
 from keras.optimizers import Adam
 from keras.callbacks import ModelCheckpoint, LearningRateScheduler
 from keras import backend as K
