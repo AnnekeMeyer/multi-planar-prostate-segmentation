@@ -201,7 +201,7 @@ def sizeCorrectionImage(img, factor, imgSize):
             cropFilter.SetUpperBoundaryCropSize([0,0,int(math.floor(-cZ/2))])
             cropFilter.SetLowerBoundaryCropSize([0,0,int(math.ceil(-cZ/2))])
             img = cropFilter.Execute(img)
-            cz=0
+            cZ=0
         else:
             correction = True
     else:
